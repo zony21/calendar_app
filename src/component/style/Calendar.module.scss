@@ -1,0 +1,68 @@
+.c_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+}
+.day_box{
+    width: calc(100% / 7);
+    position: relative;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.day_box_lastmonth{
+    background: #DEDEDE;
+}
+.day_in{
+    padding: 10px 10px 10px 0;
+}
+.event_table{
+    padding: 5px;
+    border: 2px solid #00ba38;
+    background: #6dfa90;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    &:nth-child(n+2){
+        margin: 10px 0 0;
+    }
+}
+.event_table_max{
+    border: 2px solid #ff4000;
+    background: #f39c6e; 
+}
+.timeup_li{
+    border: 2px solid #505050;
+    background: #aeaeae;
+}
+.moadl_tl_date{
+    margin: 5px 0 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 16px;
+    color: #505050;
+}
+.capacity{
+    font-size: 14px;
+    text-align: center;
+    margin: 0 0 10px;
+    letter-spacing: 0.05em;
+}
+.now_member{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 5px 0 0;
+}
+.now_member_max_txt{
+    color: #ff4000;
+}
+.now_member_max{
+    color: #ffffff!important;
+    font-weight: bold!important;
+    background: #fb7142!important;
+}
