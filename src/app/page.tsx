@@ -31,7 +31,7 @@ async function getData() {
         members: setmember,
         id: doc.id,
       })
-    })
+    },{ cache: 'no-store' })
   } catch (error) {
     alert(`Error getting documents: ${error}`)
   }

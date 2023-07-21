@@ -51,7 +51,7 @@ const Day = (props: daytype) => {
             <div className={`${styles.day_box} ${lastmonth ? styles.day_box_lastmonth : ""}`}>
                 <header className="flex flex-col items-center">
                     {/* 1行目に曜日を表示 */}
-                    {rowIdx === 0 && <p className="text-sm mt-1">{day.format("dd")}</p>}
+                    {rowIdx === 0 && <p className={`text-sm mt-1 ${styles.day_indd}`}>{day.format("dd")}</p>}
                     <p className={`text-sm p-1 my-1 text-center" ${getCurrentDayClass()} ${styles.day_in}`}>
                         {day.format("DD")}
                     </p>

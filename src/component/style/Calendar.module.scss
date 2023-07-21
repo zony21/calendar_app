@@ -1,24 +1,36 @@
-.c_wrap{
+.c_wrap {
     display: flex;
     flex-wrap: wrap;
     border-top: 1px solid #000;
     border-left: 1px solid #000;
 }
-.day_box{
+.day_box {
     width: calc(100% / 7);
     position: relative;
     border-right: 1px solid #000;
     border-bottom: 1px solid #000;
     box-sizing: border-box;
     padding: 10px;
+    @media only screen and (max-width: 667px) {
+        padding: 10px 0;
+    }
 }
-.day_box_lastmonth{
-    background: #DEDEDE;
+.day_box_lastmonth {
+    background: #dedede;
 }
-.day_in{
+.day_in {
     padding: 10px 10px 10px 0;
+    @media only screen and (max-width: 667px) {
+        text-align: center;
+        padding: 0;
+    }
 }
-.event_table{
+.day_indd{
+    @media only screen and (max-width: 667px) {
+        text-align: center;
+    }
+}
+.event_table {
     padding: 5px;
     border: 2px solid #00ba38;
     background: #6dfa90;
@@ -27,19 +39,23 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    &:nth-child(n+2){
+    font-size: 15px;
+    @media only screen and (max-width: 667px) {
+        font-size: 11px;
+    }
+    &:nth-child(n + 2) {
         margin: 10px 0 0;
     }
 }
-.event_table_max{
+.event_table_max {
     border: 2px solid #ff4000;
-    background: #f39c6e; 
+    background: #f39c6e;
 }
-.timeup_li{
+.timeup_li {
     border: 2px solid #505050;
     background: #aeaeae;
 }
-.moadl_tl_date{
+.moadl_tl_date {
     margin: 5px 0 0;
     display: flex;
     gap: 10px;
@@ -47,22 +63,22 @@
     font-size: 16px;
     color: #505050;
 }
-.capacity{
+.capacity {
     font-size: 14px;
     text-align: center;
     margin: 0 0 10px;
     letter-spacing: 0.05em;
 }
-.now_member{
+.now_member {
     font-size: 18px;
     font-weight: bold;
     margin: 0 5px 0 0;
 }
-.now_member_max_txt{
+.now_member_max_txt {
     color: #ff4000;
 }
-.now_member_max{
-    color: #ffffff!important;
-    font-weight: bold!important;
-    background: #fb7142!important;
+.now_member_max {
+    color: #ffffff !important;
+    font-weight: bold !important;
+    background: #fb7142 !important;
 }
