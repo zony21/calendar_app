@@ -65,7 +65,6 @@ const EventModal = () => {
         }
         data()
     }, [])
-    console.log(cancel)
     return (
         <>
             <Modal

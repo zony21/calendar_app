@@ -31,13 +31,16 @@ async function getData() {
         members: setmember,
         id: doc.id,
       })
-    },{ cache: 'no-store' })
+    })
   } catch (error) {
     alert(`Error getting documents: ${error}`)
   }
   const postsdata = await JSON.parse(JSON.stringify(posts))
+  const res = await fetch(`https://firestore.googleapis.com/v1/projects/${process.env.NEXT_PUBLIC_REACT_APP_FIREBASE_PROJECT_ID}/databases/(default)/documents/events/`, { cache: 'no-store' })
+  const ress  = await res.json()
   return {
-    postsdata
+    postsdata,
+    ress
   }
 }
 
